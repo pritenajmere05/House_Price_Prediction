@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOUSE PRICE</title>
+</head>
+
+<body style="background-image: url(https://nycdsa-blog-files.s3.us-east-2.amazonaws.com/2021/03/chaitali-majumder/house-price-497112-KhCJQICS.jpg);
+background-repeat: no-repeat;background-attachment: fixed;background-size: 100% 100%;">
+        
+    <h1> HOUSE PRICE PREDICTION </h1>
+    <form method="POST" action="/predict_price">
+
+        <label>Area:</label>
+        <input type = "number" name = "Area">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Bedrooms:</label>
+        <input type = "number" name = "Bedrooms">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Bathrooms:</label>
+        <input type = "number" name = "Bathrooms">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Stories:</label>
+        <input type = "number" name = "Stories">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Main_Road_Connectivity:</label>
+        <select name = "Main_Road_Connectivity">
+            <option value = "yes">Yes</option>
+            <option value = "no">No</option>
+        </select>
+
+        <br>
+        <br>
+
+        <label>Guestroom:</label>
+        <select name = "Guestroom">
+            <option value = "yes">Yes</option>
+            <option value = "no">No</option>
+        </select>
+
+        <br>
+        <br>
+
+        <label>Basement:</label>
+        <select name = "Basement">
+            <option value = "yes">Yes</option>
+            <option value = "no">No</option>
+        </select>
+
+        <br>
+        <br>
+
+        <label>Hot_Water_heating:</label>
+        <select name = "Hot_Water_heating">
+            <option value = "yes">Yes</option>
+            <option value = "no">No</option>
+        </select>
+
+        <br>
+        <br>
+
+        <label>Airconditioning:</label>
+        <select name = "Airconditioning">
+            <option value = "yes">Yes</option>
+            <option value = "no">No</option>
+        </select>
+
+        <br>
+        <br>
+
+        <label>Parking:</label>
+        <input type = "number" name = "Parking">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Preffered_Area:</label>
+        <select name = "Preffered_Area">
+            <option value = "yes">Yes</option>
+            <option value = "no">No</option>
+        </select>
+
+        <br>
+        <br>
+
+        <label>Furnishing:</label>
+        <select name = "Furnishing">
+            <option value = "unfurnished">Unfurnished</option>
+            <option value = "semi-furnished">Semi-furnished</option>
+            <option value = "furnished">Furnished</option>
+        </select>
+
+        <br>
+        <br>
+
+        <input type = "submit" value="GET PRICE">
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <h4><strong>Your predicted price is : <b> {{ final_price }}</b></strong></h4>
+
+
+    </form>
+
+
+</body>
+</html>
+
